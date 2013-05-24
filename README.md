@@ -12,7 +12,7 @@ Then open a command prompt with administrator privileges and run the following c
 
     HostsUpdater 127.0.0.1 myserver
 
-If there was already a record for `127.0.0.1` then HostsUpdater updates it, otherwise it adds a new record to the hosts file.
+If there is already a record for `127.0.0.1` then HostsUpdater updates it, otherwise it adds a new record to the hosts file.
 
 Now you can ping `myserver`.
 
