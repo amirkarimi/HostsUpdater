@@ -18,5 +18,32 @@ Now you can ping `myserver`.
 
     ping myserver
 
+##Stupid Solution##
+
+###Having a personal server##
+
+You have a personal server at home? Then you want it to be accessible from work or home?
+
+As I know you have these solutions to access the server:
+
+- use its local static IP address (Ex. `192.168.1.10`) when you're at home and use its public static IP address when you're at work.
+- configure your modem to route the internal requests for your public IP address to the local one then you can use the public static IP address from either work or home. (Of course your modem should be capable of that.)
+- or you can use **HostsUpdater**. (The stupid solution!)
+
+To use HostsUpdater for this scenario you can create two `.bat` files. One for remote access and another for local access. You can put shortcuts of these files on your desktop and simply run them on appropriate conditions. Then use `myserver` whenever you need to put your server address.
+
+####Local access file####
+
+    HostsUpdater 192.168.1.10 myserver
+
+> Please note that you should use the full path of HostsUpdater.
+
+####Remote access file####
+
+    HostsUpdater #.#.#.# myserver
+
+> Put your public static IP address instead of **#.#.#.#**.
+
+
 ##Requirements##
 - .NET Framework 4.0
