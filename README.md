@@ -36,7 +36,7 @@ To use HostsUpdater for this scenario you can create two `.bat` files. One for r
 
     HostsUpdater 192.168.1.10 myserver
 
-> Please note that you should use the full path of HostsUpdater.
+> Please note that you should use the full path of HostsUpdater and use your server local address instead of **192.168.1.10**.
 
 ####Remote access file####
 
